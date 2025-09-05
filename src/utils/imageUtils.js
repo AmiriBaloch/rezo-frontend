@@ -23,11 +23,11 @@ export const getImageUrl = (imagePath) => {
   // Check if the path already contains 'uploads' to prevent duplication
   if (imagePath.includes('uploads/')) {
     // If it already has uploads, just prepend the base URL
-    return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'}/${imagePath}`;
+    return `${process.env.NEXT_PUBLIC_BACKEND_URL || 'https://api.smare.org'}/${imagePath}`;
   }
   
   // Construct the full URL using the uploads directory
-  return `${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000'}/uploads/${imagePath}`;
+  return `${process.env.NEXT_PUBLIC_BACKEND_URL || 'https://api.smare.org'}/uploads/${imagePath}`;
 };
 
 /**

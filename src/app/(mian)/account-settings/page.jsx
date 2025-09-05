@@ -813,7 +813,7 @@ const AccountSettings = () => {
                   {ownershipStatus === 'APPROVED' && (
                     <div>
                       <button 
-                        onClick={() => window.location.href = 'http://localhost:3001/owner'}
+                        onClick={() => window.location.href = '/owner'}
                         className="text-[#99763d] hover:text-[#8a6d35] transition-colors font-medium cursor-pointer text-lg"
                       >
                         🎉Owner dashboard
@@ -824,7 +824,7 @@ const AccountSettings = () => {
                   {builderStatus === 'APPROVED' && (
                     <div>
                       <button 
-                        onClick={() => window.location.href = 'http://localhost:3001/dashboard'}
+                        onClick={() => window.location.href = '/dashboard'}
                         className="text-[#99763d] hover:text-[#8a6d35] transition-colors font-medium cursor-pointer text-lg"
                       >
                         🎉Builder dashboard
